@@ -77,21 +77,17 @@
 // -------------------
 
 .burger {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $forTablet) {
-    margin-bottom: 5px;
-  }
-
   span {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     transition: 0.1s;
     background-color: #18181B;
   }
@@ -100,20 +96,20 @@
   span::after {
     content: "";
     display: block;
-    width: 48px;
-    height: 2px;
+    width: 100%;
+    height: 1.5px;
     background-color: #18181B;
     transition: 0.3s;
   }
 
   span::before {
     position: relative;
-    top: -11px;
+    top: -7px;
   }
 
   span::after {
     position: relative;
-    bottom: -11px;
+    bottom: -7px;
   }
 
   // -------------

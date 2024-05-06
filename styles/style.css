@@ -115,9 +115,15 @@ body {
   font-size: 18px;
   line-height: 140%;
   color: #18181b;
+  min-width: 360px;
 }
 body.menu-is-opened {
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 my-container {
@@ -199,6 +205,11 @@ h3 {
   line-height: 120%;
   color: #18181b;
 }
+@media (max-width: 768px) {
+  h3 {
+    font-size: 22px;
+  }
+}
 
 .header {
   padding-top: 40px;
@@ -264,21 +275,16 @@ h3 {
 }
 
 .burger {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1220px) {
-  .burger {
-    margin-bottom: 5px;
-  }
-}
 .burger span {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   transition: 0.1s;
   background-color: #18181B;
 }
@@ -286,18 +292,18 @@ h3 {
 .burger span::after {
   content: "";
   display: block;
-  width: 48px;
-  height: 2px;
+  width: 100%;
+  height: 1.5px;
   background-color: #18181B;
   transition: 0.3s;
 }
 .burger span::before {
   position: relative;
-  top: -11px;
+  top: -7px;
 }
 .burger span::after {
   position: relative;
-  bottom: -11px;
+  bottom: -7px;
 }
 .burger.opened span {
   background-color: transparent;
@@ -369,6 +375,11 @@ h3 {
   color: #52525b;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .intro__content sup-title {
+    font-size: 14px;
+  }
+}
 .intro__middle {
   display: flex;
   align-items: flex-start;
@@ -422,6 +433,14 @@ h3 {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .intro__middle middle-right li {
+    gap: 30px;
+  }
+  .intro__middle middle-right li p {
+    padding: 0;
+  }
 }
 .intro__bottom {
   display: flex;
