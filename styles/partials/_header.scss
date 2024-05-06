@@ -84,6 +84,10 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: $forTablet) {
+    margin-bottom: 5px;
+  }
+
   span {
     display: block;
     width: 100%;
