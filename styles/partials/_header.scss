@@ -1,6 +1,10 @@
 .header {
   padding-top: 40px;
 
+  @media (max-width: $forTablet) {
+    padding-top: 20px;
+  }
+
   &__content {
     font-weight: 500;
     font-size: 16px;
@@ -60,6 +64,10 @@
 
     a:hover {
       opacity: 0.6;
+    }
+
+    img {
+      width: 32px;
     }
 
     @media (max-width: $forTablet) {
@@ -180,6 +188,10 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+    }
+
+    img {
+      width: 40px;
     }
 
     a:hover {

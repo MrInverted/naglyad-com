@@ -214,6 +214,11 @@ h3 {
 .header {
   padding-top: 40px;
 }
+@media (max-width: 1220px) {
+  .header {
+    padding-top: 20px;
+  }
+}
 .header__content {
   font-weight: 500;
   font-size: 16px;
@@ -262,6 +267,9 @@ h3 {
 }
 .header__right a:hover {
   opacity: 0.6;
+}
+.header__right img {
+  width: 32px;
 }
 @media (max-width: 1220px) {
   .header__right {
@@ -359,6 +367,9 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+.burger__content messengers-list img {
+  width: 40px;
 }
 .burger__content messengers-list a:hover {
   opacity: 0.6;
@@ -644,6 +655,9 @@ h3 {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.footer__right img {
+  width: 32px;
 }
 .footer__right a:hover {
   opacity: 0.6;
