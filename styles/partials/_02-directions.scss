@@ -1,0 +1,120 @@
+.directions {
+
+  &__content {
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+
+      @media (max-width: $forTablet) {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        @media (max-width: $forTablet) {
+          flex-direction: column-reverse;
+        }
+      }
+
+      border-radius: 10px;
+      border: 1px solid rgba(24, 24, 27, 0.2);
+      overflow: hidden;
+    }
+
+    article-block {
+      display: block;
+      flex: 1;
+    }
+
+    article-text {
+      display: block;
+      padding: 0 40px;
+
+      @media (max-width: $forTablet) {
+        padding: 40px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 24px;
+
+      @media (max-width: $forTablet) {
+        text-align: center;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: $forTablet) {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      a {
+        flex: 0 0 180px;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        text-decoration-skip-ink: none;
+        color: #5888ff;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        @media (max-width: $forTablet) {
+          flex: unset;
+        }
+      }
+
+      a::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        vertical-align: middle;
+
+        background-image: url("../images/direction-link-anchor.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    img {
+      @media (max-width: $forPhone) {
+        aspect-ratio: 320/380;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

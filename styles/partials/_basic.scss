@@ -1,0 +1,88 @@
+$forTablet: 1180px + 40px;
+$forPhone: 768px;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #18181b;
+
+  &.menu-is-opened {
+    overflow: hidden;
+  }
+}
+
+my-container {
+  display: block;
+  max-width: 1420px + 40px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 1460px) {
+    max-width: 1180px + 40px;
+  }
+
+  @media (max-width: $forTablet) {
+    max-width: $forPhone;
+    padding: 0 40px;
+  }
+
+  @media (max-width: $forPhone) {
+    max-width: 360px;
+    padding: 0 20px;
+  }
+}
+
+section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  @media (max-width: $forTablet) {
+    padding: 70px 0;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #18181b;
+  margin-bottom: 60px;
+
+  span {
+    background: linear-gradient(90deg, #58a0ff 0%, #5888ff 45%, #5966ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: $forTablet) {
+    font-size: 44px;
+  }
+
+  @media (max-width: $forPhone) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #18181b;
+
+  @media (max-width: $forPhone) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #18181b;
+}
