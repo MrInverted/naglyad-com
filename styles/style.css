@@ -307,11 +307,11 @@ h3 {
 }
 .burger span::before {
   position: relative;
-  top: -7px;
+  top: -6px;
 }
 .burger span::after {
   position: relative;
-  bottom: -7px;
+  bottom: -6px;
 }
 .burger.opened span {
   background-color: transparent;
