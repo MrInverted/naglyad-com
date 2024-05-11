@@ -307,7 +307,7 @@ h3 {
 }
 .burger span::before {
   position: relative;
-  top: -6px;
+  top: -7px;
 }
 .burger span::after {
   position: relative;
