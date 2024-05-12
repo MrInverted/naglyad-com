@@ -7,6 +7,10 @@
     margin-top: 70px;
   }
 
+  @media (max-width: $forPhone) {
+    margin-top: 60px;
+  }
+
   &__content {}
 
   &__top {

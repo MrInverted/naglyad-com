@@ -47,6 +47,10 @@ section {
   @media (max-width: $forTablet) {
     padding: 70px 0;
   }
+
+  @media (max-width: $forPhone) {
+    padding: 60px 0;
+  }
 }
 
 h1 {
@@ -71,6 +75,7 @@ h1 {
 
   @media (max-width: $forPhone) {
     font-size: 24px;
+    margin-bottom: 40px;
   }
 }
 

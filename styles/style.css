@@ -160,6 +160,11 @@ section {
     padding: 70px 0;
   }
 }
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}
 
 h1 {
   font-weight: 700;
@@ -184,6 +189,7 @@ h1 span {
 @media (max-width: 768px) {
   h1 {
     font-size: 24px;
+    margin-bottom: 40px;
   }
 }
 
@@ -379,6 +385,11 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+@media (max-width: 768px) {
+  .intro__content {
+    gap: 60px;
+  }
 }
 .intro__content sup-title {
   display: block;
@@ -612,6 +623,11 @@ h3 {
 @media (max-width: 1220px) {
   .footer {
     margin-top: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 60px;
   }
 }
 .footer__top {

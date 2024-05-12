@@ -5,6 +5,10 @@
     flex-direction: column;
     gap: 80px;
 
+    @media (max-width: $forPhone) {
+      gap: 60px;
+    }
+
     sup-title {
       display: block;
       text-align: center;
